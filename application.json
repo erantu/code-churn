@@ -43,6 +43,21 @@
                         ]
                 },
 		{
+			"kind": "FileSource",
+			"name": "${DIL_REPOSITORY_NAME}",
+			"notificationParties": [
+				"superuser@ca.com"
+			],
+			"plugin": "${DIL_SOURCE_CONTROL_TYPE}/${GITHUB_PLUGIN_VERSION}",
+			"type": "Import Files",
+			"parameters": {
+				"owner": "${owner}",
+				"repository": "${repository}",
+				"branch": "${branch}"
+			},
+			"endpoint": "endpoint 3816dec7-4245-42a6-a0cc-e8f564996694"
+		}
+		{
 			"kind": "CommitSource",
 			"name": "${DIL_REPOSITORY_NAME}_commitSource",
 			"plugin": "${DIL_SOURCE_CONTROL_TYPE}/${GITHUB_PLUGIN_VERSION}",
