@@ -54,7 +54,7 @@
 			},
 			"notificationParties": [
 				"superuser@ca.com"
-			],
+			]
 		},
 		{
 			"kind": "CommitSource",
