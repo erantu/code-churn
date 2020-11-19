@@ -44,22 +44,6 @@
 	],
 	"parameters": [
 		{
-			"name": "DIL_SOURCE_CONTROL_TYPE",
-			"value": "GitHub"
-		},
-		{
-			"name": "DIL_CONTENT_SOURCE_TYPE",
-                        "value": "Rally®"
-		},
-		{
-			"name": "DIL_SOURCE_CONTROL_URL",
-			"value": "https://api.github.com"
-		},
-		{
-			"name": "DIL_REPOSITORY_OWNER",
-			"value": "rally1-rallydev"
-		},
-		{
 			"name": "DIL_REPOSITORY_NAME",
 			"value": "code-churn"
 		},
@@ -68,32 +52,8 @@
 			"value": "main"
 		},
 		{
-			"name": "DIL_REPOSITORY_USERNAME",
-			"value": "rally1.rallydev@gmail.com"
-		},
-		{
-			"name": "DIL_CONTENT_DATA_SOURCE_URL",
-                        "value": "https://rally1.rallydev.com"
-		},
-		{
-			"name": "DIL_CONTENT_DATA_SOURCE_WORKSPACE",
-                        "value": "CA Technologies"
-		},
-		{
-			"name": "DIL_CONTENT_DATA_SOURCE_API_KEY",
-                        "value": "_7qWinSImQ3ePVezdZdPVdal2hb91014lM6lH4oStME"
-		},
-		{
 			"name": "DIL_ENVIRONMENT_NAME",
 			"value": "DEV"
-		},
-		{
-			"name": "GITHUB_PLUGIN_VERSION",
-			"value": "1.0.3"
-		},
-		{
-			"name": "RALLY_PLUGIN_VERSION",
-			"value": "2.18"
 		}
 	]
 }
