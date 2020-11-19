@@ -47,7 +47,7 @@
 			"name": "${DIL_REPOSITORY_NAME}",
 			"plugin": "${DIL_SOURCE_CONTROL_TYPE}/${GITHUB_PLUGIN_VERSION}",
 			"endpoint": "${DIL_REPOSITORY_NAME}",
-			"type": "Import Files",
+			"type": "Get Files",
 			"parameters": {
 				"owner": "${DIL_REPOSITORY_OWNER}",
 				"repository": "${DIL_REPOSITORY_NAME}"
