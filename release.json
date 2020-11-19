@@ -17,15 +17,29 @@
 			"runOnCreation": false
 		},
 		{
+			"kind": "Phase",
+			"name": "${DIL_ENVIRONMENT_NAME}",
 			"release": "${DIL_REPOSITORY_NAME}/${DIL_REPOSITORY_BRANCH}",
-			"environments": [
-				"${DIL_ENVIRONMENT_NAME}_${DIL_REPOSITORY_NAME}"
-			],
 			"approvalGate": "AUTOMATIC",
 			"skipTasksWithUnchangedApplications": false,
 			"isApprovalRequired": false,
+						"environments": [
+				"${DIL_ENVIRONMENT_NAME}_${DIL_REPOSITORY_NAME}"
+			]
+		},
+				{
+			"phase": "${DIL_REPOSITORY_NAME}/${DIL_REPOSITORY_BRANCH}/${DIL_ENVIRONMENT_NAME}",
+			"isDisabled": false,
+			"applicationVersionBuilds": [
+				{
+					"applicationVersion": "Local|${DIL_REPOSITORY_NAME}/${DIL_REPOSITORY_BRANCH}",
+					"buildNumber": "%${DIL_REPOSITORY_NAME}.last_successful_change%"
+				}
+			],
+			"isOnFailurePhaseEnabled": true,
+			"isSkipTaskOnFailure": false,
 			"name": "${DIL_ENVIRONMENT_NAME}",
-			"kind": "Phase"
+			"kind": "Task"
 		}
 	],
 	"parameters": [
