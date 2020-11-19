@@ -23,7 +23,7 @@
 			"approvalGate": "AUTOMATIC",
 			"skipTasksWithUnchangedApplications": false,
 			"isApprovalRequired": false,
-						"environments": [
+				"environments": [
 				"${DIL_ENVIRONMENT_NAME}_${DIL_REPOSITORY_NAME}"
 			]
 		},
@@ -96,4 +96,4 @@
 			"value": "2.18"
 		}
 	]
-} 
+}
