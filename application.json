@@ -55,7 +55,7 @@
 			"notificationParties": [
 				"superuser@ca.com"
 			],
-		}
+		},
 		{
 			"kind": "CommitSource",
 			"name": "${DIL_REPOSITORY_NAME}_commitSource",
