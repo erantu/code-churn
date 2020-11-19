@@ -1,0 +1,125 @@
+{
+	"objects": [
+		{
+			"kind": "Application",
+			"name": "${DIL_REPOSITORY_NAME}"
+		},
+		{
+			"kind": "Environment",
+			"name": "${DIL_ENVIRONMENT_NAME}_${DIL_REPOSITORY_NAME}",
+			"applications": [
+				"Local|${DIL_REPOSITORY_NAME}"
+			],
+			"isProduction": false
+		},
+		{
+			"kind": "Endpoint",
+			"name": "${DIL_REPOSITORY_NAME}",
+			"plugin": "${DIL_SOURCE_CONTROL_TYPE}/${GITHUB_PLUGIN_VERSION}",
+			"type": "${DIL_SOURCE_CONTROL_TYPE}",
+			"parameters": {
+				"url": "${DIL_SOURCE_CONTROL_URL}",
+				"owner": "${DIL_REPOSITORY_OWNER}",
+				"username": "${DIL_REPOSITORY_USERNAME}",
+				"password": "${DIL_REPOSITORY_PASSWORD}"
+			},
+			"environments": [
+				"${DIL_ENVIRONMENT_NAME}"
+			]
+		},
+                {
+                        "kind": "Endpoint",
+			"name": "${DIL_REPOSITORY_NAME}",
+                        "plugin": "${DIL_CONTENT_SOURCE_TYPE}/${RALLY_PLUGIN_VERSION}",
+                        "type": "${DIL_CONTENT_SOURCE_TYPE}",
+                        "parameters": {
+                                "url": "${DIL_CONTENT_DATA_SOURCE_URL}",
+                                "workspace": "${DIL_CONTENT_DATA_SOURCE_WORKSPACE}",
+                                "apikey": "${DIL_CONTENT_DATA_SOURCE_API_KEY}",
+                                "useProxy": "false"
+                        },
+                        "environments": [
+				"${DIL_ENVIRONMENT_NAME}"
+                        ]
+                },
+		{
+			"kind": "CommitSource",
+			"name": "${DIL_REPOSITORY_NAME}_commitSource",
+			"plugin": "${DIL_SOURCE_CONTROL_TYPE}/${GITHUB_PLUGIN_VERSION}",
+			"endpoint": "${DIL_REPOSITORY_NAME}",
+			"application": "Local|${DIL_REPOSITORY_NAME}",
+			"type": "Get Commit Messages",
+			"parameters": {
+				"owner": "${DIL_REPOSITORY_OWNER}",
+				"repository": "${DIL_REPOSITORY_NAME}"
+			},
+			"commitRegularExpression": "^[ \\\\t]*([A-Za-z0-9_-]+)"
+		},
+                {
+                        "kind": "ContentSource",
+			"name": "${DIL_REPOSITORY_NAME}_contentSource",
+                        "plugin": "${DIL_CONTENT_SOURCE_TYPE}/${RALLY_PLUGIN_VERSION}",
+			"endpoint": "${DIL_REPOSITORY_NAME}",
+			"application": "Local|${DIL_REPOSITORY_NAME}",
+                        "type": "Add Content"
+                }
+	],
+	"parameters": [
+		{
+			"name": "DIL_SOURCE_CONTROL_TYPE",
+			"value": "GitHub"
+		},
+		{
+			"name": "DIL_CONTENT_SOURCE_TYPE",
+                        "value": "Rally®"
+		},
+		{
+			"name": "DIL_SOURCE_CONTROL_URL",
+			"value": "https://api.github.com"
+		},
+		{
+			"name": "DIL_REPOSITORY_OWNER",
+			"value": "rally1-rallydev"
+		},
+		{
+			"name": "DIL_REPOSITORY_NAME",
+			"value": "code-churn"
+		},
+		{
+			"name": "DIL_REPOSITORY_BRANCH",
+			"value": "main"
+		},
+		{
+			"name": "DIL_REPOSITORY_USERNAME",
+			"value": "rally1.rallydev@gmail.com"
+		},
+		{
+			"name": "DIL_REPOSITORY_PASSWORD",
+			"value": "90af839f303ce48665875e562ceb8da407e3d835"
+		},
+		{
+			"name": "DIL_CONTENT_DATA_SOURCE_URL",
+                        "value": "https://rally1.rallydev.com"
+		},
+		{
+			"name": "DIL_CONTENT_DATA_SOURCE_WORKSPACE",
+                        "value": "CA Technologies"
+		},
+		{
+			"name": "DIL_CONTENT_DATA_SOURCE_API_KEY",
+                        "value": "_7qWinSImQ3ePVezdZdPVdal2hb91014lM6lH4oStME"
+		},
+		{
+			"name": "DIL_ENVIRONMENT_NAME",
+			"value": "DEV"
+		},
+		{
+			"name": "GITHUB_PLUGIN_VERSION",
+			"value": "1.0.3"
+		},
+		{
+			"name": "RALLY_PLUGIN_VERSION",
+			"value": "2.18"
+		}
+	]
+}
