@@ -72,10 +72,6 @@
 			"value": "rally1.rallydev@gmail.com"
 		},
 		{
-			"name": "DIL_REPOSITORY_PASSWORD",
-			"value": "90af839f303ce48665875e562ceb8da407e3d835"
-		},
-		{
 			"name": "DIL_CONTENT_DATA_SOURCE_URL",
                         "value": "https://rally1.rallydev.com"
 		},
