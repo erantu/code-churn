@@ -19,7 +19,7 @@
 		{
 			"release": "${DIL_REPOSITORY_NAME}/${DIL_REPOSITORY_BRANCH}",
 			"environments": [
-				"${DIL_ENVIRONMENT_NAME}"
+				"${DIL_ENVIRONMENT_NAME}_${DIL_REPOSITORY_BRANCH}"
 			],
 			"approvalGate": "AUTOMATIC",
 			"skipTasksWithUnchangedApplications": false,
