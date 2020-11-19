@@ -45,17 +45,17 @@
 		{
 			"kind": "FileSource",
 			"name": "${DIL_REPOSITORY_NAME}",
+			"plugin": "${DIL_SOURCE_CONTROL_TYPE}/${GITHUB_PLUGIN_VERSION}",
+			"endpoint": "${DIL_REPOSITORY_NAME}",
+			"type": "Import Files",
+			"parameters": {
+				"owner": "${DIL_REPOSITORY_OWNER}",
+				"repository": "${DIL_REPOSITORY_NAME}"
+				"branch": "${branch}"
+			},
 			"notificationParties": [
 				"superuser@ca.com"
 			],
-			"plugin": "${DIL_SOURCE_CONTROL_TYPE}/${GITHUB_PLUGIN_VERSION}",
-			"type": "Import Files",
-			"parameters": {
-				"owner": "${owner}",
-				"repository": "${repository}",
-				"branch": "${branch}"
-			},
-			"endpoint": "endpoint 3816dec7-4245-42a6-a0cc-e8f564996694"
 		}
 		{
 			"kind": "CommitSource",
