@@ -50,8 +50,8 @@
 			"type": "Import Files",
 			"parameters": {
 				"owner": "${DIL_REPOSITORY_OWNER}",
-				"repository": "${DIL_REPOSITORY_NAME}"
-				"branch": "${branch}"
+				"repository": "${DIL_REPOSITORY_NAME}",
+				"branch": "master"
 			},
 			"notificationParties": [
 				"superuser@ca.com"
