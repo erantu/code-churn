@@ -24,7 +24,7 @@
 				"password": "${DIL_REPOSITORY_PASSWORD}"
 			},
 			"environments": [
-				"${DIL_ENVIRONMENT_NAME}"
+				"${DIL_ENVIRONMENT_NAME}_${DIL_REPOSITORY_NAME}"
 			]
 		},
                 {
@@ -39,7 +39,7 @@
                                 "useProxy": "false"
                         },
                         "environments": [
-				"${DIL_ENVIRONMENT_NAME}"
+				"${DIL_ENVIRONMENT_NAME}_${DIL_REPOSITORY_NAME}"
                         ]
                 },
 		{
