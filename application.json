@@ -100,10 +100,6 @@
 			"value": "code-churn"
 		},
 		{
-			"name": "DIL_REPOSITORY_BRANCH",
-			"value": "main"
-		},
-		{
 			"name": "DIL_REPOSITORY_USERNAME",
 			"value": "rally1.rallydev@gmail.com"
 		},
