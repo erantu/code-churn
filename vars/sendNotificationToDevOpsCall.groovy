@@ -71,7 +71,7 @@ void sendNotificationToDevOps() {
    customUseSSL: "${DEVOPS_USE_SSL}"
   ],
   releaseTokens: '{}',
-  scopre: "APPLICATION",
+  scope: "APPLICATION",
   fileSourceName: '${DEVOPS_APPLICATION_NAME}',
   fileSourceParameters: '{"branch":${DEVOPS_APPLICATION_VERSION}}',
   dslFilename: 'release.json',
