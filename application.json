@@ -14,6 +14,21 @@
 		},
 		{
 			"kind": "Endpoint",
+			"name": "${DIL_REPOSITORY_NAME}_RELEASE_DSL",
+			"plugin": "${DIL_SOURCE_CONTROL_TYPE}/${GITHUB_PLUGIN_VERSION}",
+			"type": "${DIL_SOURCE_CONTROL_TYPE}",
+			"parameters": {
+				"url": "${DIL_SOURCE_CONTROL_URL}",
+				"owner": "${DIL_RELEASE_DSL_REPOSITORY_OWNER}",
+				"username": "${DIL_RELEASE_DSL_REPOSITORY_USERNAME}",
+				"password": "${DIL_RELEASE_DSL_REPOSITORY_PASSWORD}"
+			},
+			"environments": [
+				"${DIL_ENVIRONMENT_NAME}_${DIL_REPOSITORY_NAME}"
+			]
+		},
+		{
+			"kind": "Endpoint",
 			"name": "${DIL_REPOSITORY_NAME}",
 			"plugin": "${DIL_SOURCE_CONTROL_TYPE}/${GITHUB_PLUGIN_VERSION}",
 			"type": "${DIL_SOURCE_CONTROL_TYPE}",
@@ -46,11 +61,11 @@
 			"kind": "FileSource",
 			"name": "${DIL_REPOSITORY_NAME}",
 			"plugin": "${DIL_SOURCE_CONTROL_TYPE}/${GITHUB_PLUGIN_VERSION}",
-			"endpoint": "${DIL_REPOSITORY_NAME}",
+			"endpoint": "${DIL_REPOSITORY_NAME}_RELEASE_DSL",
 			"type": "Get Files",
 			"parameters": {
-				"owner": "${DIL_REPOSITORY_OWNER}",
-				"repository": "${DIL_REPOSITORY_NAME}"
+				"owner": "${DIL_RELEASE_DSL_REPOSITORY_OWNER}",
+				"repository": "${DIL_RELEASE_DSL_REPOSITORY_NAME}"
 			},
 			"notificationParties": [
 				"superuser@ca.com"
@@ -118,6 +133,22 @@
 		{
 			"name": "DIL_CONTENT_DATA_SOURCE_API_KEY",
                         "value": "_7qWinSImQ3ePVezdZdPVdal2hb91014lM6lH4oStME"
+		},
+		{
+			"name": "DIL_RELEASE_DSL_REPOSITORY_OWNER",
+			"value": "rally1-rallydev"
+		},
+		{
+			"name": "DIL_RELEASE_DSL_REPOSITORY_NAME",
+			"value": "code-churn"
+		},
+		{
+			"name": "DIL_RELEASE_DSL_REPOSITORY_USERNAME",
+			"value": "rally1.rallydev@gmail.com"
+		},
+		{
+			"name": "DIL_RELEASE_DSL_REPOSITORY_PASSWORD",
+			"value": "90af839f303ce48665875e562ceb8da407e3d835"
 		},
 		{
 			"name": "DIL_ENVIRONMENT_NAME",
