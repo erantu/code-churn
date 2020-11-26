@@ -136,19 +136,19 @@
 		},
 		{
 			"name": "DIL_RELEASE_DSL_REPOSITORY_OWNER",
-			"value": "rally1-rallydev"
+			"value": "release-dsl"
 		},
 		{
 			"name": "DIL_RELEASE_DSL_REPOSITORY_NAME",
-			"value": "code-churn"
+			"value": "code-churn_RELEASE_DSL"
 		},
 		{
 			"name": "DIL_RELEASE_DSL_REPOSITORY_USERNAME",
-			"value": "rally1.rallydev@gmail.com"
+			"value": "release.dsl40@gmail.com"
 		},
 		{
 			"name": "DIL_RELEASE_DSL_REPOSITORY_PASSWORD",
-			"value": "90af839f303ce48665875e562ceb8da407e3d835"
+			"value": "556014c5b08b699d941ad46d1416e943f5d95e5b"
 		},
 		{
 			"name": "DIL_ENVIRONMENT_NAME",
