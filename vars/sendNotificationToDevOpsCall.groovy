@@ -13,7 +13,7 @@ void environmentSetUp() {
  setGitEnvironmentVariables()
  env.DEVOPS_SERVER_NAME = "cddirector.io"
  env.DEVOPS_SERVER_PORT = "443"
- env.DEVOPS_TENANT_ID = "17827b55-3a42-403f-b1f8-9655d7e625bb"
+ env.DEVOPS_TENANT_ID = "1e87ecb9-a1fc-4b1f-b113-b18fc0f79a21"
  echo "DEVOPS_TENANT_ID: [$env.DEVOPS_TENANT_ID]"
  env.DEVOPS_USE_SSL = true
  env.DEVOPS_APPLICATION_NAME = "${env.GIT_URL.replaceFirst(/^.*\/([^\/]+?).git$/, '$1')}"
