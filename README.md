@@ -1,11 +1,10 @@
 # README
 
 1. Create a CDD SaaS tenant and API key
-
 create an API key for the logged in user - My Settings section in CDD UI
 
 2. Connect CDD SaaS tenant to BizOps tenant
-set CDD SaaS enterprise site id - update DEVOPS_TENANT_ID and DEVOPS_API_KEY properties in setDevOpsEnterpriseSiteId.sh script and execute
+set CDD SaaS enterprise site id - update DEVOPS_TENANT_ID and DEVOPS_API_KEY properties in [setDevOpsEnterpriseSiteId.sh] (https://github.com/rally1-rallydev/code-churn/blob/main/setDevOpsEnterpriseSiteId.sh) script and execute
 map the CDD SaaS tenant to BizOps tenant - platform team
 
 3. Install and setup CDD HPI in Jenkins - https://storage.googleapis.com/cdd-plugins/cdd-jenkins.hpi
