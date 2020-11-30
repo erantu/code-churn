@@ -1,4 +1,4 @@
-# code-churn 
+# README
 
 1. Create a CDD SaaS tenant and API key
 create an API key for the logged in user - My Settings section in CDD UI
