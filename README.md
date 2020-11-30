@@ -1,6 +1,7 @@
 # README
 
 1. Create a CDD SaaS tenant and API key
+
 create an API key for the logged in user - My Settings section in CDD UI
 
 2. Connect CDD SaaS tenant to BizOps tenant
