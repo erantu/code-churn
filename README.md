@@ -12,6 +12,6 @@
    - configure CDD SaaS tenant id (DEVOPS_TENANT_ID) in [sendNotificationToDevOpsCall.groovy](https://github.com/rally1-rallydev/code-churn/blob/main/vars/sendNotificationToDevOpsCall.groovy) file and create DEVOPS_API_KEY credentials in Jenkins
    - call the groovy file [sendNotificationToDevOpsCall.groovy](https://github.com/rally1-rallydev/code-churn/blob/main/vars/sendNotificationToDevOpsCall.groovy) in the post successful build step
 
-4. **Create Commit Data Source per source code repository** (should be repeated on every branch created)
+4. **Create Commit Data Source per source code repository** (should be repeated on every repository created)
    -  update source code repo (DIL_REPOSITORY_OWNER, DIL_REPOSITORY_NAME, DIL_REPOSITORY_USERNAME and DIL_REPOSITORY_PASSWORD) in [application.json](https://github.com/rally1-rallydev/code-churn/blob/main/application.json)
    - import application JSON DSL per source code repository - update DEVOPS_TENANT_ID and DEVOPS_API_KEY in [createDevOpsCommitDataSource.sh](https://github.com/rally1-rallydev/code-churn/blob/main/createDevOpsCommitDataSource.sh) script and execute
