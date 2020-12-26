@@ -83,7 +83,7 @@ void sendNotificationToDevOps() {
       "name": "${DEVOPS_APPLICATION_NAME}",
       "parameters": {"numberOfTestSuites":"${NUMBER_OF_TEST_SUITES}"}
     }
-  ]
+  ],
   scope: "APPLICATION",
   fileSourceName: '${DEVOPS_APPLICATION_NAME}',
   fileSourceParameters: '{"branch":"main"}',
