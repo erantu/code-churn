@@ -72,7 +72,6 @@ void sendNotificationToDevOps() {
    customTenantId: "${DEVOPS_TENANT_ID}",
    customUseSSL: "${DEVOPS_USE_SSL}"
   ],
-  releaseTokens: '{}',
   releaseTokens: [
     {
       "name": "ReleaseTokenTemplate.NUMBER_OF_FLAKY_TEST_SUITES",
