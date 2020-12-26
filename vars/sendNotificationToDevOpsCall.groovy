@@ -73,7 +73,7 @@ void sendNotificationToDevOps() {
    customUseSSL: "${DEVOPS_USE_SSL}"
   ],
   releaseTokens: '{"ReleaseToken/NUMBER_OF_FLAKY_TEST_SUITES":"${NUMBER_OF_FLAKY_TEST_SUITES}"}',
-  testSources: '[{"name": "${DEVOPS_APPLICATION_NAME}", "parameters": {"numberOfTestSuites":"${NUMBER_OF_TEST_SUITES}", "numberOfFlakyTestSuites":"${NUMBER_OF_FLAKY_TEST_SUITES}"}}]',
+  testSources: '[{"name": "${DEVOPS_APPLICATION_NAME}_testSource", "parameters": {"numberOfTestSuites":"${NUMBER_OF_TEST_SUITES}", "numberOfFlakyTestSuites":"${NUMBER_OF_FLAKY_TEST_SUITES}"}}]',
   scope: "APPLICATION",
   fileSourceName: '${DEVOPS_APPLICATION_NAME}',
   fileSourceParameters: '{"branch":"main"}',
