@@ -109,7 +109,7 @@
 			"endpoint": "${DIL_REPOSITORY_NAME}",
 			"application": "Local|${DIL_REPOSITORY_NAME}",
 			"parameters": {
-				"numberOfTestSuites": "{DIL_TEST_DATA_SOURCE_NUMBER_OF_TEST_SUITES}",
+				"numberOfTestSuites": "${DIL_TEST_DATA_SOURCE_NUMBER_OF_TEST_SUITES}",
 				"numberOfRecentlyFailedTestSuites": "${DIL_TEST_DATA_SOURCE_NUMBER_OF_FLAKY_TEST_SUITES}"
 			},
 			"type": "Import Tests",
