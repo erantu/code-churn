@@ -93,11 +93,11 @@
                         "type": "Add Content"
                 },
 		{
-			"application": "Local|code-churn",
-			"name": "code-churn",
 			"kind": "TestSource",
-			"endpoint": "code-churn",
+			"name": "code-churn",
 			"plugin": "ibndev003774.bpc.broadcom.net|Manual Deployment/1.1|1",
+			"endpoint": "code-churn",
+			"application": "Local|code-churn",
 			"parameters": {
 				"numberOfTestSuites": "10",
 				"numberOfRecentlyFailedTestSuites": "%ReleaseTokenTemplate/NUMBER_OF_FLAKY_TEST_SUITES%"
