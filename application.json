@@ -61,17 +61,12 @@
                         "kind": "Endpoint",
 			"name": "${DIL_REPOSITORY_NAME}",
                         "plugin": "${DIL_TEST_SOURCE_TYPE}/${MANUAL_DEPLOYMENT_PLUGIN_VERSION}",
-                        "type": "${DIL_CONTENT_SOURCE_TYPE}",
-                        "parameters": {
-                                "url": "${DIL_CONTENT_DATA_SOURCE_URL}",
-                                "workspace": "${DIL_CONTENT_DATA_SOURCE_WORKSPACE}",
-                                "apikey": "${DIL_CONTENT_DATA_SOURCE_API_KEY}",
-                                "useProxy": "false"
-                        },
+			"type": "Manual Deployment",
+			"parameters": {},
                         "environments": [
 				"${DIL_ENVIRONMENT_NAME}_${DIL_REPOSITORY_NAME}"
                         ]
-                },
+		},
 		{
 			"kind": "FileSource",
 			"name": "${DIL_REPOSITORY_NAME}",
