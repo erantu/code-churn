@@ -61,7 +61,7 @@
                         "kind": "Endpoint",
 			"name": "${DIL_REPOSITORY_NAME}",
                         "plugin": "${DIL_TEST_SOURCE_TYPE}/${MANUAL_DEPLOYMENT_PLUGIN_VERSION}",
-			"type": "Manual Deployment",
+			"type": "${DIL_TEST_SOURCE_TYPE}",
 			"parameters": {},
                         "environments": [
 				"${DIL_ENVIRONMENT_NAME}_${DIL_REPOSITORY_NAME}"
@@ -129,6 +129,10 @@
 		},
 		{
 			"name": "DIL_TEST_SOURCE_TYPE",
+                        "value": "Manual Deployment"
+		},
+		{
+			"name": "_DIL_TEST_SOURCE_TYPE",
                         "value": "ibndev003774.bpc.broadcom.net|Manual Deployment"
 		},
 		{
