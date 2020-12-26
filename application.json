@@ -60,7 +60,7 @@
                 {
                         "kind": "Endpoint",
 			"name": "${DIL_REPOSITORY_NAME}",
-                        "plugin": "${DIL_TEST_SOURCE_TYPE}/${MANUAL_DEPLOYMENT_PLUGIN_VERSION}",
+                        "plugin": "${_DIL_TEST_SOURCE_TYPE}/${MANUAL_DEPLOYMENT_PLUGIN_VERSION}",
 			"type": "${DIL_TEST_SOURCE_TYPE}",
 			"parameters": {},
                         "environments": [
@@ -105,7 +105,7 @@
 		{
 			"kind": "TestSource",
 			"name": "${DIL_REPOSITORY_NAME}_testSource",
-			"plugin": "${DIL_TEST_SOURCE_TYPE}/${MANUAL_DEPLOYMENT_PLUGIN_VERSION}",
+			"plugin": "${_DIL_TEST_SOURCE_TYPE}/${MANUAL_DEPLOYMENT_PLUGIN_VERSION}",
 			"endpoint": "${DIL_REPOSITORY_NAME}",
 			"application": "Local|${DIL_REPOSITORY_NAME}",
 			"parameters": {
