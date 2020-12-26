@@ -94,17 +94,17 @@
                 },
 		{
 			"kind": "TestSource",
-			"name": "code-churn",
-			"plugin": "ibndev003774.bpc.broadcom.net|Manual Deployment/1.1|1",
-			"endpoint": "code-churn",
-			"application": "Local|code-churn",
+			"name": "${DIL_REPOSITORY_NAME}_testSource",
+			"plugin": "${DIL_TEST_SOURCE_TYPE}/${MANUAL_DEPLOYMENT_PLUGIN_VERSION}",
+			"endpoint": "${DIL_REPOSITORY_NAME}",
+			"application": "Local|${DIL_REPOSITORY_NAME}",
 			"parameters": {
-				"numberOfTestSuites": "10",
-				"numberOfRecentlyFailedTestSuites": "%ReleaseTokenTemplate/NUMBER_OF_FLAKY_TEST_SUITES%"
+				"numberOfTestSuites": "{DIL_TEST_DATA_SOURCE_NUMBER_OF_TEST_SUITES}",
+				"numberOfRecentlyFailedTestSuites": "${DIL_TEST_DATA_SOURCE_NUMBER_OF_FLAKY_TEST_SUITES}"
 			},
 			"type": "Import Tests",
 			"tags": [
-				"code-churn"
+				"${DIL_REPOSITORY_NAME}"
 			]
 		}
 	],
@@ -116,6 +116,10 @@
 		{
 			"name": "DIL_CONTENT_SOURCE_TYPE",
                         "value": "Rally®"
+		},
+		{
+			"name": "DIL_TEST_SOURCE_TYPE",
+                        "value": "ibndev003774.bpc.broadcom.net|Manual Deployment"
 		},
 		{
 			"name": "DIL_SOURCE_CONTROL_URL",
@@ -150,6 +154,14 @@
                         "value": "_7qWinSImQ3ePVezdZdPVdal2hb91014lM6lH4oStME"
 		},
 		{
+			"name": "DIL_TEST_DATA_SOURCE_NUMBER_OF_TEST_SUITES",
+                        "value": "1024"
+		},
+		{
+			"name": "DIL_TEST_DATA_SOURCE_NUMBER_OF_FLAKY_TEST_SUITES",
+                        "value": "%ReleaseTokenTemplate/NUMBER_OF_FLAKY_TEST_SUITES%"
+		},
+		{
 			"name": "DIL_RELEASE_DSL_REPOSITORY_OWNER",
 			"value": "release-dsl"
 		},
@@ -176,6 +188,10 @@
 		{
 			"name": "RALLY_PLUGIN_VERSION",
 			"value": "2.18"
+		},
+		{
+			"name": "MANUAL_DEPLOYMENT_PLUGIN_VERSION",
+			"value": "1.1|1"
 		}
 	]
 }
