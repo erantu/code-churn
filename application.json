@@ -91,7 +91,22 @@
 			"endpoint": "${DIL_REPOSITORY_NAME}",
 			"application": "Local|${DIL_REPOSITORY_NAME}",
                         "type": "Add Content"
-                }
+                },
+		{
+			"application": "Local|code-churn",
+			"name": "code-churn",
+			"kind": "TestSource",
+			"endpoint": "code-churn",
+			"plugin": "ibndev003774.bpc.broadcom.net|Manual Deployment/1.1|1",
+			"parameters": {
+				"numberOfTestSuites": "10",
+				"numberOfRecentlyFailedTestSuites": "%ReleaseTokenTemplate/NUMBER_OF_FLAKY_TEST_SUITES%"
+			},
+			"type": "Import Tests",
+			"tags": [
+				"code-churn"
+			]
+		}
 	],
 	"parameters": [
 		{
