@@ -169,7 +169,7 @@
 		},
 		{
 			"name": "DIL_TEST_DATA_SOURCE_NUMBER_OF_TEST_SUITES",
-                        "value": "1024"
+                        "value": ""
 		},
 		{
 			"name": "DIL_TEST_DATA_SOURCE_NUMBER_OF_FLAKY_TEST_SUITES",
