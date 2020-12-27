@@ -173,7 +173,7 @@
 		},
 		{
 			"name": "DIL_TEST_DATA_SOURCE_NUMBER_OF_FLAKY_TEST_SUITES",
-                        "value": "%ReleaseTokenTemplate/NUMBER_OF_FLAKY_TEST_SUITES%"
+                        "value": ""
 		},
 		{
 			"name": "DIL_RELEASE_DSL_REPOSITORY_OWNER",
