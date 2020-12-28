@@ -16,7 +16,7 @@ void environmentSetUp() {
  env.DEVOPS_TENANT_ID = "5a7accc0-0fc1-4f3f-b792-2204937c7f64"
  echo "DEVOPS_TENANT_ID: [$env.DEVOPS_TENANT_ID]"
  env.NUMBER_OF_TEST_SUITES = 10
- env.NUMBER_OF_FLAKY_TEST_SUITES = 5
+ env.NUMBER_OF_FLAKY_TEST_SUITES = 2
  env.DEVOPS_USE_SSL = true
  env.DEVOPS_APPLICATION_NAME = "${env.GIT_URL.replaceFirst(/^.*\/([^\/]+?).git$/, '$1')}"
  env.DEVOPS_APPLICATION_VERSION = "$env.BRANCH_NAME"
