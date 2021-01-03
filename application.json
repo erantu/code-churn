@@ -60,7 +60,7 @@
                 {
                         "kind": "Endpoint",
 			"name": "${DIL_REPOSITORY_NAME}",
-                        "plugin": "${_DIL_TEST_SOURCE_TYPE}/${MANUAL_DEPLOYMENT_PLUGIN_VERSION}",
+                        "plugin": "${DIL_TEST_SOURCE_TYPE}/${MANUAL_DEPLOYMENT_PLUGIN_VERSION}",
 			"type": "${DIL_TEST_SOURCE_TYPE}",
 			"parameters": {},
                         "environments": [
@@ -105,7 +105,7 @@
 		{
 			"kind": "TestSource",
 			"name": "${DIL_REPOSITORY_NAME}_testSource",
-			"plugin": "${_DIL_TEST_SOURCE_TYPE}/${MANUAL_DEPLOYMENT_PLUGIN_VERSION}",
+			"plugin": "${DIL_TEST_SOURCE_TYPE}/${MANUAL_DEPLOYMENT_PLUGIN_VERSION}",
 			"endpoint": "${DIL_REPOSITORY_NAME}",
 			"application": "Local|${DIL_REPOSITORY_NAME}",
 			"parameters": {
@@ -130,10 +130,6 @@
 		{
 			"name": "DIL_TEST_SOURCE_TYPE",
                         "value": "Manual Deployment"
-		},
-		{
-			"name": "_DIL_TEST_SOURCE_TYPE",
-                        "value": "ibndev003774.bpc.broadcom.net|Manual Deployment"
 		},
 		{
 			"name": "DIL_SOURCE_CONTROL_URL",
