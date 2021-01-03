@@ -67,7 +67,7 @@
 				"${DIL_ENVIRONMENT_NAME}_${DIL_REPOSITORY_NAME}"
                         ]
 		},
-		{
+		{ 
 			"kind": "FileSource",
 			"name": "${DIL_REPOSITORY_NAME}",
 			"plugin": "${DIL_SOURCE_CONTROL_TYPE}/${GITHUB_PLUGIN_VERSION}",
