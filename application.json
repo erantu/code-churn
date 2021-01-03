@@ -201,7 +201,7 @@
 		},
 		{
 			"name": "MANUAL_DEPLOYMENT_PLUGIN_VERSION",
-			"value": "1.1|1"
+			"value": "1.1|2"
 		}
 	]
 }
